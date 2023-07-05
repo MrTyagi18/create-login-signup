@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="login-container">
+        <article class="form-container">
+          <div class="intro">
+            <h1>Sign Up</h1>
+          </div>
+          <form id="signupForm" class="form">
+            <div class="email-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>              <span id="seperator"></span>
+              <div class="input-container">
+                <input type="email" id="email" placeholder="Email" required />
+              </div>
+            </div>
+            
+            <div class="email-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>                <span id="seperator"></span>
+                <div class="input-container">
+                  <input type="text" id="name" placeholder="Name" required>
+                </div>
+              </div>
+  
+                <div class="email-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>                    <div class="input-container">
+                        <div class="input-container"></div>
+                        <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+                    </div>
+                  </div>
+    
+                  <div class="email-input">
+                    <span class="material-icons-round icon-size">Gender</span>
+                    <span id="seperator"></span>
+                    <div class="input-container">
+                        <select id="gender" required>
+                          <option value="">-- Select Gender --</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                  
+                    </div>
+                  </div>
+              <div class="email-input">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07-1.09 1.07C6.75 16.64 5.88 17 4.96 17c-.73 0-1.4-.23-1.96-.61V21c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-4.61c-.56.38-1.23.61-1.96.61-.92 0-1.79-.36-2.44-1.01zM18 9h-5V7h-2v2H6c-1.66 0-3 1.34-3 3v1.54c0 1.08.88 1.96 1.96 1.96.52 0 1.02-.2 1.38-.57l2.14-2.13 2.13 2.13c.74.74 2.03.74 2.77 0l2.14-2.13 2.13 2.13c.37.37.86.57 1.38.57 1.08 0 1.96-.88 1.96-1.96V12C21 10.34 19.66 9 18 9z"/></svg>                <span id="seperator"></span>
+                <span id="seperator"></span>
+                <div class="input-container">
+                  <input type="date" id="dob" required>
+                </div>
+              </div>
+          <!--
+            <div class="email-input">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M2,17h20v2H2V17z M3.15,12.95L4,11.47l0.85,1.48l1.3-0.75L5.3,10.72H7v-1.5H5.3l0.85-1.47L4.85,7L4,8.47L3.15,7l-1.3,0.75 L2.7,9.22H1v1.5h1.7L1.85,12.2L3.15,12.95z M9.85,12.2l1.3,0.75L12,11.47l0.85,1.48l1.3-0.75l-0.85-1.48H15v-1.5h-1.7l0.85-1.47 L12.85,7L12,8.47L11.15,7l-1.3,0.75l0.85,1.47H9v1.5h1.7L9.85,12.2z M23,9.22h-1.7l0.85-1.47L20.85,7L20,8.47L19.15,7l-1.3,0.75 l0.85,1.47H17v1.5h1.7l-0.85,1.48l1.3,0.75L20,11.47l0.85,1.48l1.3-0.75l-0.85-1.48H23V9.22z"/></g></g></svg>                    <span id="seperator"></span>
+                <div class="input-container">
+                <input type="text" id="otp" placeholder="OTP" required>
+              </div>
+            </div>
+          -->
+              
+
+            <button type="submit" id="submit">Sign Up</button>
+          </form>
+  
+          <article class="outro">
+            <div class="ending">
+              <p>Or Continue With</p>
+            </div>
+  
+            <div class="socials">
+              <a class="social-btn" href="" id="g-btn"><p>Google</p></a>
+              <a class="social-btn" href="" id="a-btn"><p>Apple</p></a>
+              <a class="social-btn" href="" id="fb-btn"><p>Facebook</p></a>
+            </div>
+          </article>
+        </article>
+        <article class="login-side-bg"></article>
+      </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
